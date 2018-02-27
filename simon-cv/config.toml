@@ -1,3 +1,218 @@
-baseURL = "http://example.org/"
+baseURL = "http://simonlindgren.info/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Simon Lindgren"
+theme = "orbit"
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-5.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Simon Lindgren"
+        tagline = "Backend Developer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: simon.g.lindgren@gmail.com"
+        title = "simon.g.lindgren@gmail.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+46730513623"
+        title = "+4673 051 36 23"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//mimir.news"
+        title = "mimir.news"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/simon-lindgren-269102a4"
+        title = "linkedin.com/in/simon-lindgren"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/czarsimon"
+        title = "github.com/czarsimon"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "MSc in Strategy and Control"
+        college = "University of Linköping"
+        dates = "2006 - 2010"
+
+        [[params.education.list]]
+        degree = "BSc in Computer Engineering"
+        college = "University of Linköping"
+        dates = "2011 - 2013"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "Swedish"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Fluent"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Coding :)"
+
+	      [[params.interests.list]]
+        interest = "Investing"
+
+        [[params.interests.list]]
+        interest = "Skiing"
+
+        [[params.interests.list]]
+        interest = "Brewing beer"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Integration Architect"
+        dates = "Q2 2017 - Q2 2018"
+        company = "Accenture AB - Banking client, Stockholm"
+        details = "**As part of a project, implementing a large scale batch processing engine** for banking client, Simon held the role as Integration Architect. Responsibilities included designing interfaces and integration patterns with external and internal services, as well as setting up the application from an infrastructructure perspective for high availability and disaster recovery. Further Simon was responsible for setting up continuous integration and deployment pipelines."
+
+        [[params.jobs.list]]
+        position = "Backend Developer"
+        dates = "Q3 2016 - Q2 2018"
+        company = "Accenture AB - Banking client, Stockholm"
+        details = "Simon had sole responsibility for developing backend http APIs and Apache Kafka consumers as part of a larger project to build a batch processing engine. Both were implemented in Java 8 using the spring framework and kafka consumer APIs. Challenges included designing the kafka consumers for extreme peaks of message volumes during intermittent reporting periods, which the previous message system consumers were unable to handle. Simons work resulted in an order of magnitude performance improvement in message handling and successful production go-live of both the consumers and backend APIs."
+
+        [[params.jobs.list]]
+        position = "Test Automation Lead"
+        dates = "Q3 2016 - Q2 2017"
+        company = "Accenture AB - Banking client, Stockholm"
+        details = "Simon was responsible for developing a test automation tool for running, system and regression testing on a highly stateful batch processing application implemented in and Oracle database. The test tool was implemented in Java using reflection and allowed individual testers and developers to write declarative test cases in JSON configuration files, simply declaring expected prior state, test steps and expected result. The tester written test cases were then automatically picked up, ran and reported by the continuous integration pipeline. The tool and automation approach for testing stateful applications was successfully rolled out in the project and repeatedly demonstrated to other projects within the client as a model for other test automation efforts."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[params.projects.list]]
+        title = "mimir"
+        url = "https://mimir.news"
+        tagline = "News application that gathers, clusters and ranks stock news based on real time streams from twitter and scraping linked news articles. The application presents a list of the most relevant news based on each individual users stock portfolio. The backend uses a microservices architecture with services written in Go, Python and Java, fully containerized and deployed with Kubernetes on AWS. The frontend is written in Javascript with React and React Native"
+
+        [[params.projects.list]]
+        title = "sws"
+        url = "https://github.com/czarsimon/sws"
+        tagline = "Tool for running and managing multiple sites on a single host. Used to serve this page."
+
+        [[params.projects.list]]
+        title = "service-controller"
+        url = "https://github.com/czarsimon/service-controller"
+        tagline = "system and command line utility for bringing up, managing a Docker swarm cluster, and declaratively specifying containerized services to be deployed on the cluster. The system works by installing a worker service on all worker and master nodes in the cluster, that join a given Docker swarm, sets up necessary networking and storage volumes and coordinates container versions across the cluster."
+
+        [[params.projects.list]]
+        title = "monkey"
+        url = "https://github.com/czarsimon/monkey"
+        tagline = "Interpreter for a dynamically typed programming language with first class functions. Implemented and fully tested in golang."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Go"
+        level = "90%"
+
+	[[params.skills.list]]
+        skill = "Python"
+        level = "90%"
+
+	[[params.skills.list]]
+        skill = "Java"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Javascript"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "React"
+        level = "75%"
+
+	[[params.skills.list]]
+        skill = "Apache Kafka"
+        level = "80%"
+
+	[[params.skills.list]]
+        skill = "Docker"
+        level = "90%"
+
+	[[params.skills.list]]
+        skill = "Kubernetes"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
