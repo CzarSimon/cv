@@ -126,7 +126,7 @@ theme = "orbit"
         position = "Integration Architect"
         dates = "Q2 2017 - Q2 2018"
         company = "Accenture AB - Banking client, Stockholm"
-        details = "**As part of a project, implementing a large scale batch processing engine** for banking client, Simon held the role as Integration Architect. Responsibilities included designing interfaces and integration patterns with external and internal services, as well as setting up the application from an infrastructructure perspective for high availability and disaster recovery. Further Simon was responsible for setting up continuous integration and deployment pipelines."
+        details = "**As part of a project, implementing a large scale batch processing engine** for banking client, I held the role as Integration Architect. Responsibilities included designing interfaces and integration patterns with external and internal services, as well as setting up the application from an infrastructructure perspective for high availability and disaster recovery. Further I was responsible for setting up continuous integration and deployment pipelines."
 
         [[params.jobs.list]]
         position = "Backend Developer"
@@ -154,7 +154,7 @@ theme = "orbit"
         [[params.projects.list]]
         title = "sws"
         url = "https://github.com/czarsimon/sws"
-        tagline = "Tool for running and managing multiple sites on a single host. Used to serve this page."
+        tagline = "Tool for running multiple outward facing services in containers on a single host and proxy to them based on domain. Supports declaritve description of services, updating a service without interupting others. Used to serve this page :)"
 
         [[params.projects.list]]
         title = "service-controller"
