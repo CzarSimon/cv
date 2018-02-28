@@ -1,4 +1,4 @@
-baseURL = "http://simonlindgren.info/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Simon Lindgren"
 theme = "orbit"
@@ -114,7 +114,7 @@ theme = "orbit"
         enable = true
         icon = "fa-user"
         title = "Career Profile"
-        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+        summary = "**Driven backend developer** with experience from industries such as banking and automotive. Used to work in a fast paced environments with short iteration loops and tight deadlines. Besides my roles as backend developer, I have had architectural responsibilities and been responsible for setting up test automation, continuous integration and deployment pipelines."
 
     # Experiences section
     [params.experiences]
@@ -132,20 +132,19 @@ theme = "orbit"
         position = "Backend Developer"
         dates = "Q3 2016 - Q2 2018"
         company = "Accenture AB - Banking client, Stockholm"
-        details = "Simon had sole responsibility for developing backend http APIs and Apache Kafka consumers as part of a larger project to build a batch processing engine. Both were implemented in Java 8 using the spring framework and kafka consumer APIs. Challenges included designing the kafka consumers for extreme peaks of message volumes during intermittent reporting periods, which the previous message system consumers were unable to handle. Simons work resulted in an order of magnitude performance improvement in message handling and successful production go-live of both the consumers and backend APIs."
+        details = "**Responsibility for developing backend http APIs and Apache Kafka consumers** as part of a larger project to build a batch processing engine. Both were implemented in Java 8 using the spring framework and kafka consumer APIs. Challenges included designing the kafka consumers for extreme peaks of message volumes during intermittent reporting periods, which the previous message system consumers were unable to handle. The work resulted in an order of magnitude performance improvement in message handling."
 
         [[params.jobs.list]]
         position = "Test Automation Lead"
         dates = "Q3 2016 - Q2 2017"
         company = "Accenture AB - Banking client, Stockholm"
-        details = "Simon was responsible for developing a test automation tool for running, system and regression testing on a highly stateful batch processing application implemented in and Oracle database. The test tool was implemented in Java using reflection and allowed individual testers and developers to write declarative test cases in JSON configuration files, simply declaring expected prior state, test steps and expected result. The tester written test cases were then automatically picked up, ran and reported by the continuous integration pipeline. The tool and automation approach for testing stateful applications was successfully rolled out in the project and repeatedly demonstrated to other projects within the client as a model for other test automation efforts."
+        details = "**Responsible for developing a test automation tool** for running system and regression testing on a highly stateful batch processing application implemented in and Oracle database. The test tool was implemented in Java using reflection and allowed individual testers and developers to write declarative test cases in JSON configuration files, simply declaring expected prior state, test steps and expected result. The created written test cases were then automatically picked up, ran and reported by the continuous integration pipeline. The tool and automation approach was successfully rolled out in the project and repeatedly demonstrated to other projects within the client as a model for other test automation efforts."
 
     # Projects section
     [params.projects]
         enable = true
         icon = "fa-archive"
         title = "Projects"
-        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
 
         [[params.projects.list]]
         title = "mimir"
@@ -160,7 +159,7 @@ theme = "orbit"
         [[params.projects.list]]
         title = "service-controller"
         url = "https://github.com/czarsimon/service-controller"
-        tagline = "system and command line utility for bringing up, managing a Docker swarm cluster, and declaratively specifying containerized services to be deployed on the cluster. The system works by installing a worker service on all worker and master nodes in the cluster, that join a given Docker swarm, sets up necessary networking and storage volumes and coordinates container versions across the cluster."
+        tagline = "System and command line utility for bringing up, managing a Docker swarm cluster, and declaratively specifying containerized services to be deployed on the cluster. The system works by installing a worker service on all worker and master nodes in the cluster, that join a given Docker swarm, sets up necessary networking and storage volumes and coordinates container versions across the cluster."
 
         [[params.projects.list]]
         title = "monkey"
