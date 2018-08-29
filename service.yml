@@ -3,4 +3,4 @@ spec:
   name: simon-cv
   port: 4000
   domain: simonlindgren.info
-  image: czarsimon/resume:v1.5
+  image: eu.gcr.io/personal-214719/simonlindgren.info:1.6

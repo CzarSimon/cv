@@ -4,14 +4,14 @@
  <html lang="en"> 
 
 <head>
-	<meta name="generator" content="Hugo 0.36.1" />
+	<meta name="generator" content="Hugo 0.47.1" />
         <title></title>
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hugo Responsive Resume/CV Theme for Developers">
-    <meta name="author" content="Pavel Kanyshev">
+    <meta name="description" content="My CV, created with Hugo, deployed with sws">
+    <meta name="author" content="Simon Lindgren">
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     
@@ -47,9 +47,7 @@
 				
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto:%20simon.g.lindgren@gmail.com">simon.g.lindgren@gmail.com</a></li>
 				
-                    <li class="phone"><i class="fa fa-phone"></i><a href="#ZgotmplZ">&#43;4673 051 36 23</a></li>
-				
-                    <li class="website"><i class="fa fa-globe"></i><a href="//mimir.news">mimir.news</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i><a href="#ZgotmplZ">&#43;4672 237 50 51</a></li>
 				
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="//linkedin.com/in/simon-lindgren-269102a4">linkedin.com/in/simon-lindgren</a></li>
 				
@@ -66,7 +64,7 @@
                 <div class="item">
                     <h4 class="degree">MSc in Strategy and Control</h4>
                     <h5 class="meta">University of Linköping</h5>
-                    <div class="time">2006 - 2010</div>
+                    <div class="time">2011 - 2016</div>
                 </div>
 				
                 <div class="item">
@@ -102,8 +100,6 @@
 				
                     <li>Investing</li>
 				
-                    <li>Skiing</li>
-				
                     <li>Brewing beer</li>
 				
                 </ul>
@@ -120,7 +116,7 @@
 	            <section class="section summary-section">
                 <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
                 <div class="summary">
-                    <p><strong>Driven backend developer</strong> with experience from industries such as banking and automotive. Used to work in a fast paced environments with short iteration loops and tight deadlines. Besides my roles as backend developer, I have had architectural responsibilities and been responsible for setting up test automation, continuous integration and deployment pipelines.</p>
+                    <p><strong>Driven backend developer</strong> with experience from industries such as med-tech, banking and games development. Used to work in a fast paced environments with short iteration loops and tight deadlines. Besides my roles as backend developer, I have had architectural responsibilities and been responsible for setting up test automation, continuous integration and deployment pipelines.</p>
                 </div>
             </section>
 
@@ -130,6 +126,32 @@
                 <section class="section experiences-section">
                 <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
 
+				
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Backend Developer (consultant)</h3>
+                            <div class="time">April 2018 - Present</div>
+                        </div>
+                        <div class="company">Doktor24</div>
+                    </div>
+                    <div class="details">
+                        <p><strong>Part of the team designing and developing the backend plattform for Dotkor24</strong> a med-tech startup in Stockholm with a goal of making primary care digitally accessible for patients and more efficent for doctors. My responsibilities include developing and designing backend services in Java and Python as well as DevOps task such as deployment, cicd and monitoring setup for the plattform with tools such as Kubernetes, Docker and Jenkins.</p>
+                    </div>
+                </div>
+				
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">DevOps Engineering Consultant</h3>
+                            <div class="time">March 2018 - April 2018</div>
+                        </div>
+                        <div class="company">Mojang AB</div>
+                    </div>
+                    <div class="details">
+                        <p><strong>Designed and developed a system for tracking open source dependencies</strong> in all the teams source code repos as well as automating the verification that libraries where acceptable for use. The system was developed in Python and run on AWS using technologies such as AWS Lambda, Simple Queue Service and Aurora.</p>
+                    </div>
+                </div>
 				
                 <div class="item">
                     <div class="meta">
@@ -183,11 +205,15 @@
                 </div>
 				
                 <div class="item">
-                    <span class="project-title"><a href="https://mimir.news">mimir</a></span> - <span class="project-tagline">News application that gathers, clusters and ranks stock news based on real time streams from twitter and scraping linked news articles. The application presents a list of the most relevant news based on each individual users stock portfolio. The backend uses a microservices architecture with services written in Go, Python and Java, fully containerized and deployed with Kubernetes on AWS. The frontend is written in Javascript with React and React Native</span>
+                    <span class="project-title"><a href="https://github.com/CzarSimon/mimir">mimir</a></span> - <span class="project-tagline">News application that gathers, clusters and ranks stock news based on real time streams from twitter and scraping linked news articles. The application presents a list of the most relevant news based on each individual users stock portfolio. The backend uses a microservices architecture with services written in Go, Python and Java, fully containerized and deployed with Kubernetes on AWS. The frontend is written in Javascript with React and React Native</span>
                 </div>
 				
                 <div class="item">
                     <span class="project-title"><a href="https://github.com/czarsimon/sws">sws</a></span> - <span class="project-tagline">Tool for running multiple outward facing services in containers on a single host and proxy to them based on domain. Supports declaritve description of services, updating a service without interupting others. Used to serve this page :)</span>
+                </div>
+				
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/czarsimon/dockmon">dockmon</a></span> - <span class="project-tagline">Liveness probing and and service restarting agent for docker containers on a single node. Allows users to specify any number of containers for which to conduct liveness probes, the frequency of health checks and optionally if a service should be restarted when it becomes unhealthy. Inspired by the Kubernetes liveness probing API with the goal of making the same service stability availibe of smaller hobby project. Used to monitor a number of my hobby projects and this site :)</span>
                 </div>
 				
                 <div class="item">
@@ -208,17 +234,17 @@
                 <div class="skillset">
 				
                     <div class="item">
-                        <h3 class="level-title">Go</h3>
+                        <h3 class="level-title">Python</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
+                            <div class="level-bar-inner" data-level="85%">
                             </div>
                         </div>
                     </div>
                 
                     <div class="item">
-                        <h3 class="level-title">Python</h3>
+                        <h3 class="level-title">Go</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
+                            <div class="level-bar-inner" data-level="80%">
                             </div>
                         </div>
                     </div>
@@ -234,7 +260,7 @@
                     <div class="item">
                         <h3 class="level-title">Javascript</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="80%">
+                            <div class="level-bar-inner" data-level="75%">
                             </div>
                         </div>
                     </div>
@@ -242,7 +268,7 @@
                     <div class="item">
                         <h3 class="level-title">React</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="75%">
+                            <div class="level-bar-inner" data-level="70%">
                             </div>
                         </div>
                     </div>
@@ -250,7 +276,7 @@
                     <div class="item">
                         <h3 class="level-title">Apache Kafka</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="80%">
+                            <div class="level-bar-inner" data-level="70%">
                             </div>
                         </div>
                     </div>
@@ -266,7 +292,7 @@
                     <div class="item">
                         <h3 class="level-title">Kubernetes</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="60%">
+                            <div class="level-bar-inner" data-level="75%">
                             </div>
                         </div>
                     </div>

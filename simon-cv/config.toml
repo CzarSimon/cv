@@ -6,8 +6,8 @@ theme = "orbit"
 [params]
 
 # Meta
-    description = "Hugo Responsive Resume/CV Theme for Developers"
-    author = "Pavel Kanyshev"
+    description = "My CV, created with Hugo, deployed with sws"
+    author = "Simon Lindgren"
 
 # Theme styles
 
@@ -39,14 +39,8 @@ theme = "orbit"
         [[params.contact.list]]
         class = "phone"
         icon = "fa-phone"
-        url = "tel:+46730513623"
-        title = "+4673 051 36 23"
-
-        [[params.contact.list]]
-        class = "website"
-        icon = "fa-globe"
-        url = "//mimir.news"
-        title = "mimir.news"
+        url = "tel:+46722375051"
+        title = "+4672 237 50 51"
 
         [[params.contact.list]]
         class = "linkedin"
@@ -68,7 +62,7 @@ theme = "orbit"
         [[params.education.list]]
         degree = "MSc in Strategy and Control"
         college = "University of Linköping"
-        dates = "2006 - 2010"
+        dates = "2011 - 2016"
 
         [[params.education.list]]
         degree = "BSc in Computer Engineering"
@@ -100,9 +94,6 @@ theme = "orbit"
         interest = "Investing"
 
         [[params.interests.list]]
-        interest = "Skiing"
-
-        [[params.interests.list]]
         interest = "Brewing beer"
 
 # Main body sections
@@ -114,13 +105,26 @@ theme = "orbit"
         enable = true
         icon = "fa-user"
         title = "Career Profile"
-        summary = "**Driven backend developer** with experience from industries such as banking and automotive. Used to work in a fast paced environments with short iteration loops and tight deadlines. Besides my roles as backend developer, I have had architectural responsibilities and been responsible for setting up test automation, continuous integration and deployment pipelines."
+        summary = "**Driven backend developer** with experience from industries such as med-tech, banking and games development. Used to work in a fast paced environments with short iteration loops and tight deadlines. Besides my roles as backend developer, I have had architectural responsibilities and been responsible for setting up test automation, continuous integration and deployment pipelines."
 
     # Experiences section
     [params.experiences]
         enable = true
         icon = "fa-briefcase"
         title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Backend Developer (consultant)"
+        dates = "April 2018 - Present"
+        company = "Doktor24"
+        url = "https://doktor24.se"
+        details = "**Part of the team designing and developing the backend plattform for Dotkor24** a med-tech startup in Stockholm with a goal of making primary care digitally accessible for patients and more efficent for doctors. My responsibilities include developing and designing backend services in Java and Python as well as DevOps task such as deployment, cicd and monitoring setup for the plattform with tools such as Kubernetes, Docker and Jenkins."
+
+        [[params.jobs.list]]
+        position = "DevOps Engineering Consultant"
+        dates = "March 2018 - April 2018"
+        company = "Mojang AB"
+        details = "**Designed and developed a system for tracking open source dependencies** in all the teams source code repos as well as automating the verification that libraries where acceptable for use. The system was developed in Python and run on AWS using technologies such as AWS Lambda, Simple Queue Service and Aurora."
 
         [[params.jobs.list]]
         position = "Integration Architect"
@@ -148,13 +152,18 @@ theme = "orbit"
 
         [[params.projects.list]]
         title = "mimir"
-        url = "https://mimir.news"
+        url = "https://github.com/CzarSimon/mimir"
         tagline = "News application that gathers, clusters and ranks stock news based on real time streams from twitter and scraping linked news articles. The application presents a list of the most relevant news based on each individual users stock portfolio. The backend uses a microservices architecture with services written in Go, Python and Java, fully containerized and deployed with Kubernetes on AWS. The frontend is written in Javascript with React and React Native"
 
         [[params.projects.list]]
         title = "sws"
         url = "https://github.com/czarsimon/sws"
         tagline = "Tool for running multiple outward facing services in containers on a single host and proxy to them based on domain. Supports declaritve description of services, updating a service without interupting others. Used to serve this page :)"
+
+        [[params.projects.list]]
+        title = "dockmon"
+        url = "https://github.com/czarsimon/dockmon"
+        tagline = "Liveness probing and and service restarting agent for docker containers on a single node. Allows users to specify any number of containers for which to conduct liveness probes, the frequency of health checks and optionally if a service should be restarted when it becomes unhealthy. Inspired by the Kubernetes liveness probing API with the goal of making the same service stability availibe of smaller hobby project. Used to monitor a number of my hobby projects and this site :)"
 
         [[params.projects.list]]
         title = "service-controller"
@@ -173,36 +182,36 @@ theme = "orbit"
         title = "Skills & Proficiency"
 
         [[params.skills.list]]
-        skill = "Go"
-        level = "90%"
-
-	[[params.skills.list]]
         skill = "Python"
-        level = "90%"
+        level = "85%"
 
-	[[params.skills.list]]
+        [[params.skills.list]]
+        skill = "Go"
+        level = "80%"
+
+	      [[params.skills.list]]
         skill = "Java"
         level = "80%"
 
         [[params.skills.list]]
         skill = "Javascript"
-        level = "80%"
+        level = "75%"
 
         [[params.skills.list]]
         skill = "React"
-        level = "75%"
+        level = "70%"
 
-	[[params.skills.list]]
+	      [[params.skills.list]]
         skill = "Apache Kafka"
-        level = "80%"
+        level = "70%"
 
-	[[params.skills.list]]
+	      [[params.skills.list]]
         skill = "Docker"
         level = "90%"
 
-	[[params.skills.list]]
+	      [[params.skills.list]]
         skill = "Kubernetes"
-        level = "60%"
+        level = "75%"
 
     # Footer section
 
